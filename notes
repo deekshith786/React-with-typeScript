@@ -27,4 +27,19 @@ by declaring the type structure for the props we have
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 so passing the props through the type is simple and its working fine
 now what if we send any random string that is not at all related to the content, even though that will get accepted 
-so to solve this issue we can use the type "union" by sepcifying the only strings that required 
+so to solve this issue we can use the type "union" by sepcifying the only strings that required.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+writing text in between the tags from the App.tsx gives an error type {children:string} has no properties in common with type IntrinsicAtteibutes
+so lets declare a type in the header.tsx having children: string 
+
+now lets assue instead of passing the text in the header what if we want to pass a other react component, it is as follows:
+    
+    <Oscar>
+        <Header>Oscar goes to Leonardo Dicpario!</Header>
+    </Oscar>
+this gives an error at the Oscar tag, i.e children:Element has no properties in common, to solve this we write the oscarProps with type of react component
+i.e we can use React.ReactNode from react/types package
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Optional props:
+this is used to make any parameter passed inside the props not mandatory kind 
+this can be achived by using a symbol "?" in the props
