@@ -1,0 +1,24 @@
+Getting starated on React with TypeScript
+
+lets create a new React project with typeScript 
+
+    "npx create-react-app app-name --template typeScript"
+
+this command will create a React-app with all the files with base typeScript
+
+Note: there is not much difference between the js and typeScript created react app all the files and structure are same 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Passing parameters through props:
+
+if we directly pass the value from the App.tsx and use it using the props inside the function, the props gives an error
+i.e props says that it doesnt know the structure of this props which is passed (by default the type is any) it should be changed to the type that we are passing as value
+so we need to inform the type of props to the props and we do it as follows
+
+    at top we use a word and give it a name and it is an object, and inside we can have the structure of the props 
+    i.e we passed the value name inside the App.tsx so we should be using the name: string parameters
+    eg:
+        type greetProps ={
+            name: string
+        } 
+        const Greet = (props: greetProps) // passing the type to the props at function
+-----------------------------------------------------------------------------------------------------------------------------------------------------
