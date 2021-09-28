@@ -3,6 +3,7 @@ import { EmployeeDetails } from './components/employee';
 import { Greet } from './components/greet';
 import { Person } from './components/person';
 import { PersonList } from './components/personList';
+import { Status } from './components/status';
 
 function App() {
   const personName = {
@@ -45,6 +46,7 @@ function App() {
       <Person name={personName} />
       <PersonList names={nameList}/>
       <EmployeeDetails info={employee} />
+      <Status status='loading' />
     </div>
   );
 }

@@ -25,3 +25,6 @@ by declaring the type structure for the props we have
 # we can get the type inferance of the items passes inside the props directly when used props.
 # if we pass any other datatype wrongly then it isntantly shows an error which is awsome        
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+so passing the props through the type is simple and its working fine
+now what if we send any random string that is not at all related to the content, even though that will get accepted 
+so to solve this issue we can use the type "union" by sepcifying the only strings that required 
