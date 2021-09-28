@@ -21,4 +21,7 @@ so we need to inform the type of props to the props and we do it as follows
             name: string
         } 
         const Greet = (props: greetProps) // passing the type to the props at function
+by declaring the type structure for the props we have
+# we can get the type inferance of the items passes inside the props directly when used props.
+# if we pass any other datatype wrongly then it isntantly shows an error which is awsome        
 -----------------------------------------------------------------------------------------------------------------------------------------------------
