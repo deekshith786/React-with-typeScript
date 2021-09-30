@@ -1,7 +1,10 @@
+import { ListFormat } from 'typescript';
 import './App.css';
+import { Button } from './components/button';
 import { EmployeeDetails } from './components/employee';
 import { Greet } from './components/greet';
 import { Header } from './components/header';
+import { Input } from './components/input';
 import { Oscar } from './components/oscar';
 import { Person } from './components/person';
 import { PersonList } from './components/personList';
@@ -44,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name="deekshith"  isLoggedIn={true} />
+      <Greet name="deekshith" isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
       <EmployeeDetails info={employee} />
@@ -52,6 +55,8 @@ function App() {
       <Oscar>
         <Header>Oscar goes to Leonardo Dicpario!</Header>
       </Oscar>
+      <Button onClickButton={(event, id) => console.log("Button Clicked", event, id)} ></Button>
+      <Input value="" />
     </div>
   );
 }

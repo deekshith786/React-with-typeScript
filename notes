@@ -7,7 +7,7 @@ lets create a new React project with typeScript
 this command will create a React-app with all the files with base typeScript
 
 Note: there is not much difference between the js and typeScript created react app all the files and structure are same 
------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Passing parameters through props:
 
 if we directly pass the value from the App.tsx and use it using the props inside the function, the props gives an error
@@ -24,11 +24,11 @@ so we need to inform the type of props to the props and we do it as follows
 by declaring the type structure for the props we have
 # we can get the type inferance of the items passes inside the props directly when used props.
 # if we pass any other datatype wrongly then it isntantly shows an error which is awsome        
------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 so passing the props through the type is simple and its working fine
 now what if we send any random string that is not at all related to the content, even though that will get accepted 
 so to solve this issue we can use the type "union" by sepcifying the only strings that required.
------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 writing text in between the tags from the App.tsx gives an error type {children:string} has no properties in common with type IntrinsicAtteibutes
 so lets declare a type in the header.tsx having children: string 
 
@@ -39,7 +39,13 @@ now lets assue instead of passing the text in the header what if we want to pass
     </Oscar>
 this gives an error at the Oscar tag, i.e children:Element has no properties in common, to solve this we write the oscarProps with type of react component
 i.e we can use React.ReactNode from react/types package
------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Optional props:
 this is used to make any parameter passed inside the props not mandatory kind 
 this can be achived by using a symbol "?" in the props
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Event Props:
+clickEvent  on button 
+changeEvent on inputElement
+
+clickEvent  on button: in this we pass an event which is React.MouseEvent
