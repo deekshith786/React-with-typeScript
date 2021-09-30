@@ -1,6 +1,7 @@
 import { ListFormat } from 'typescript';
 import './App.css';
 import { Button } from './components/button';
+import { Container } from './components/container';
 import { EmployeeDetails } from './components/employee';
 import { Greet } from './components/greet';
 import { Header } from './components/header';
@@ -57,6 +58,7 @@ function App() {
       </Oscar>
       <Button onClickButton={(event, id) => console.log("Button Clicked", event, id)} ></Button>
       <Input value="" />
+      <Container styles={{border: '1px solid black', padding: '1rem'}} />
     </div>
   );
 }

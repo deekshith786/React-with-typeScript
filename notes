@@ -49,3 +49,4 @@ clickEvent  on button
 changeEvent on inputElement
 
 clickEvent  on button: in this we pass an event which is React.MouseEvent
+changeEvent on input : in this we pass an event which is React.changeEvent
