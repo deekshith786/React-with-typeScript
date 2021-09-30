@@ -19,16 +19,16 @@ function App() {
 
   const nameList = [
     {
-      first: "Ross",
-      last: "Grass"
+      firstName: "Ross",
+      lastName: "Grass"
     },
     {
-      first: "Monika",
-      last: "Ross"
+      firstName: "Monika",
+      lastName: "Ross"
     },
     {
-      first: "Chandler",
-      last: "monika"
+      firstName: "Chandler",
+      lastName: "monika"
     }
   ]
   const employee = [

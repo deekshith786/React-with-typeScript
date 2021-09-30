@@ -4,10 +4,11 @@ type inputProps = {
     value: string
 }
 
-export const Input = (props: inputProps) => {
+// Destructuring the props: we can also directly use the properties inside the props without using the keyword props
+export const Input = ({value}: inputProps) => {
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => console.log(event);
     
 
-    return <input type='text' value={props.value} onChange={handleInputChange}/>
+    return <input type='text' value={value} onChange={handleInputChange}/>
 }

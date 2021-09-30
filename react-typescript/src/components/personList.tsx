@@ -1,8 +1,9 @@
+import {Name} from './person.types';
+
+// reuse the same type properties from other 
+
 type personlist = {
-    names: {
-        first: string,
-        last: string
-    }[]
+    names: Name[]
 }
 
 export const PersonList = (props: personlist) => {
@@ -10,7 +11,7 @@ export const PersonList = (props: personlist) => {
         <div>
             {props.names.map(name => {
                 return (
-                    <h1 key={name.first}>{`${name.first}  ${name.last}`}</h1>
+                    <h1 key={name.firstName}>{`${name.firstName}  ${name.lastName}`}</h1>
                 )
             })}
         </div>
